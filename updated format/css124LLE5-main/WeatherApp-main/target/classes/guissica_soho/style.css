@@ -1,0 +1,26 @@
+.dayOfWeekLable{
+    -fx-background-color: #273040;
+    -fx-padding: 2.5 5 2.5 5;
+    -fx-background-radius: 2.5;
+    -fx-text-fill: White;
+}
+#appContainer{
+    -fx-background-image: url("bg.jpg");
+    -fx-background-position: left top, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+#textInput{
+    -fx-border-style: none;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: none;
+    -fx-border-color: white;
+    -fx-text-fill: White;
+}#btnInput{
+     -fx-border-style: none;
+     -fx-border-width: 0 0 1 0;
+     -fx-border-color: white;
+     -fx-graphic: url("searchIcon.png");
+     -fx-background-color: transparent;
+ }

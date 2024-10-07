@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="appContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guissica_soho.PrimaryController">
+   <bottom>
+      <HBox prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: rgba(52, 64, 85, 0.95);" BorderPane.alignment="CENTER">
+         <children>
+            <HBox minWidth="200.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center;">
+                           <children>
+                              <ImageView fx:id="todayIcon" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@sunIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center_left;">
+                           <children>
+                              <Label fx:id="todayLabel" styleClass="dayOfWeekLable" text="TODAY" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="todayTempLabel" prefHeight="30.0" prefWidth="82.0" style="-fx-alignment: center;" styleClass="degOfDayLable" text="20°" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="dayLabelOne" styleClass="dayOfWeekLable" text="TUE" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="iconOne" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="weeklyIcons">
+                                 <image>
+                                    <Image url="@rainIcon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="tempLableOne" styleClass="degOfDayLable" text="20°" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="dayLabelTwo" styleClass="dayOfWeekLable" text="WED" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="iconTwo" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@partlyCloudyIcon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="tempLableTwo" styleClass="degOfDayLable" text="20°" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="dayLabelThree" styleClass="dayOfWeekLable" text="THU" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="iconThree" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@rainStormIcon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="tempLableThree" styleClass="degOfDayLable" text="20°" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="dayLabelFour" styleClass="dayOfWeekLable" text="FRI" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="iconFour" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@rainIcon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="tempLableFour" styleClass="degOfDayLable" text="20°" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="dayLabelFive" styleClass="dayOfWeekLable" text="SAT" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="iconFive" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sunIcon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="tempLableFive" styleClass="degOfDayLable" text="20°" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="dayLabelSix" styleClass="dayOfWeekLable" text="SUN" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="iconSix" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@rainIcon.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="tempLableSix" styleClass="degOfDayLable" text="20°" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <right>
+            <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="305.0" prefWidth="261.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="townLabel" text="Baguio" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" top="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="countryLabel" text="Mild to cool" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="242.0" prefWidth="261.0">
+                     <children>
+                        <HBox alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="261.0" HBox.hgrow="NEVER">
+                           <children>
+                              <TextField fx:id="textInput" onKeyPressed="#handleKeyPress" prefHeight="91.0" prefWidth="160.0" promptText="Location" />
+                              <Button fx:id="btnInput" maxWidth="25.0" mnemonicParsing="false" onAction="#handlebtnInput" prefHeight="39.0" prefWidth="25.0" />
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <VBox prefHeight="305.0" prefWidth="310.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="131.0" prefWidth="319.0">
+                     <children>
+                        <Label fx:id="timeLabel" text="10:00" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="100.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="27.0" prefWidth="41.0">
+                           <children>
+                              <Label fx:id="timeAmPmLabel" alignment="BASELINE_LEFT" layoutX="4.0" layoutY="75.0" prefWidth="40.0" text="pm" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <Label fx:id="dateLabel" prefHeight="30.0" prefWidth="322.0" text="Monday, 2 February 2024" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+         <padding>
+            <Insets left="30.0" right="30.0" top="25.0" />
+         </padding>
+      </BorderPane>
+   </center>
+</BorderPane>
