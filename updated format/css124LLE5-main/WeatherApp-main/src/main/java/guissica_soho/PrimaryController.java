@@ -88,52 +88,10 @@ public class PrimaryController {
         updateTime();
         startClockThread();
         startWeatherThread();
-        // loadCitiesFromJson();
         btnInput.setOnAction(event -> performSearch());
-        // textInput.textProperty().addListener((observable, oldValue, newValue) -> showAutocomplete(newValue));
         getWeatherData("Baguio"); // Initial data fetch with default location
 
     }
-
-
-    // private void loadCitiesFromJson() {
-    //     try (FileReader reader = new FileReader("le5draft/le5draft3/css124LLE5-main/WeatherApp-main/target/classes/guissica_soho/cities.json")) { // Replace with your actual path
-    //         JsonArray citiesJsonArray = JsonParser.parseReader(reader).getAsJsonArray();
-            
-    //         for (JsonElement cityElement : citiesJsonArray) {
-    //             cityList.add(cityElement.getAsString());
-    //         }
-
-    //     } catch (Exception e) {
-    //         e.printStackTrace();
-    //     }
-    // }
-    
-    // private void showAutocomplete(String input) {
-    //     autocompleteMenu.getItems().clear();
-
-    //     if (input.isEmpty()) {
-    //         autocompleteMenu.hide();
-    //         return;
-    //     }
-
-    //     for (String city : cityList) {
-    //         if (city.toLowerCase().startsWith(input.toLowerCase())) {
-    //             MenuItem item = new MenuItem(city);
-    //             item.setOnAction(event -> {
-    //                 textInput.setText(city);
-    //                 autocompleteMenu.hide();
-    //             });
-    //             autocompleteMenu.getItems().add(item);
-    //         }
-    //     }
-
-    //     if (!autocompleteMenu.getItems().isEmpty()) {
-    //         autocompleteMenu.show(textInput, javafx.geometry.Side.BOTTOM, 0, 0);
-    //     } else {
-    //         autocompleteMenu.hide();
-    //     }
-    // }
     
     private String capitalizeWords(String input) {
         if (input == null || input.isEmpty()) {
